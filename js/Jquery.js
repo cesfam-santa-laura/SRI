@@ -153,7 +153,7 @@ function BuscarDatosCronicos(bd_rut){
 													
 								
 							}
-					});				
+					});
 			}
 
 
@@ -190,7 +190,7 @@ function BuscarDatosCronicos(bd_rut){
 								
 								
 							}
-					});				
+					});
 			}
 
 
@@ -201,7 +201,7 @@ if ((evt.keyCode == 13) && (node.type=="text")) {return false;}
 }
 document.onkeypress = stopRKey; 
 
-
+// TODO: function Eliminar por RUT
 function eliminar(bd_rut){
 				if (confirm("Esta a punto de eliminar al Paciente:"+ bd_rut
 							)) {
@@ -239,7 +239,7 @@ $('[data-toggle="tooltip"]').tooltip();
         
 var cambio = false;
         $('.nav li a').each(function(index) {
-            if(this.href.trim() == window.location){
+            if(this.href.trim() == window.location) {
                 $(this).parent().addClass("active");
                 cambio = true;
             }
@@ -271,7 +271,6 @@ $('#btnVerificar').click(function(){
   
  
 $('#btnGuardarCambios').click(function(){
-            
             
 	 		var nom=document.getElementById("txtNomb").value;
 	 		var apell=document.getElementById("txtApelli").value;
@@ -322,7 +321,6 @@ $('#btnGuardarCambios').click(function(){
 
            alert("[ERROR]  Agregar la Poblacion ")
              document.formeditar.txtPobla.focus()
-          
 
        }else if(com==""){
 
@@ -344,8 +342,7 @@ $('#btnGuardarCambios').click(function(){
            alert("[ERROR] Debe Agregar un numero de ficha el Paciente")
              document.formeditar.txtFic.focus()
 
-       } else{	
-        
+       } else {	
         
         if (confirm("Esta Seguro de guardar la informacion del Paciente?")){
                         var datos = $('#formeditar').serialize();

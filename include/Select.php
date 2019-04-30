@@ -11,15 +11,4 @@
 <option value="Pablo Vergara">Pablo Vergara</option>
 <option value="Hari Castro">Hari Castro</option>
 <option value="Laura Fonseca">Laura Fonseca</option>
-<option value="Laura Fonseca">Maira Chavez</option>
-
-	
-                            
-				
-
-
-
-
-
-
-
+<option value="Maira Chavez">Maira Chavez</option>
