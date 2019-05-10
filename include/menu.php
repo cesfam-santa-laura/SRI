@@ -51,11 +51,27 @@ require_once "../include/conexiones.php";
 
 		<div class="collapse navbar-collapse navbar-ex1-collapse">
 			<ul class="nav navbar-nav">
-				<li><a href="../Star/Inicio.php"><strong>INICIO</strong></a></li>&nbsp;
+				<li><a href="../Star/Inicio.php"><strong>INICIO</strong></a></li>
 				<li><a href="../Modals/Paciente.php"><strong>PACIENTES</strong></a></li>
-				<li><a href="#"><strong>HISTORIAL DE INFORMACION</strong></a></li>&nbsp;
-				<li><a href="#"><strong>REPORTES</strong></a></li>&nbsp;
-				<li><a href="../Usuarios/usuarios.php"><strong>ADMINISTRAR USUARIOS</strong>   </a></li>&nbsp;
+				<li>
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+						<span class="fa fa-user"></span>
+						<strong>Programas
+							<span class="fa fa-chevron-down"></span>
+						</strong>
+					</a>
+					<ul class="dropdown-menu">
+						<li>
+							<a href="../CardioVascular/Paciente.php"> <span class="fa fa-heart text-danger"></span> Cardiovascular </a>
+							<a href="#"> <span class="fas fa-brain"></span> Salud Mental </a>
+							<a href="#"> <span class="fa fa-child"></span> Salud Infantil </a>
+						</li>
+
+					</ul>
+				</li>
+				<li><a href="#"><strong>HISTORIAL DE INFORMACION</strong></a></li>
+				<li><a href="#"><strong>REPORTES</strong></a></li>
+				<li><a href="../Usuarios/usuarios.php"><strong>ADMINISTRAR USUARIOS</strong></a></li>
 			</ul>
 			<!-- end: menu principal -->
 
@@ -82,7 +98,6 @@ require_once "../include/conexiones.php";
 									<div class="col-lg-7">
 										<p class="text-left small"><strong>ACCESO - <?php echo $_SESSION['acceso'];?></strong></p>
 										<p class="text-left small"><strong>SECTOR - <?php echo $_SESSION['sector'];?></label></strong></p>
-										<!-- <p class="text-left">	 -->
 										<p class="text-left small"><strong>CENTRO - <?php echo $_SESSION['centro'];?></strong></p>
 									</div>
 								</div>
